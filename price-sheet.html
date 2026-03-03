@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intervale Ranch — Wagyu Price Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: letter; margin: 0; }
+  html, body { background: white; }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 0.4in 1.2in 0.5in;
+    background: white;
+    color: #000;
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    font-weight: 500;
+    font-size: 11pt;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 0.3in;
+  }
+
+  .logo-wrap {
+    width: 4.8in;
+    height: 2.8in;
+    margin: 0 auto 0.2in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 160%;
+    height: auto;
+    margin-top: -5%;
+  }
+
+  .title { margin-bottom: 2px; }
+  .subtitle { color: #999; }
+
+  .category { margin-bottom: 0.22in; }
+
+  .category-header {
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 6px;
+  }
+
+  .item {
+    display: flex;
+    align-items: baseline;
+    padding: 3px 0;
+  }
+
+  .item-name { white-space: nowrap; }
+
+  .item-dots {
+    flex: 1;
+    border-bottom: 0.5px dotted #ccc;
+    margin: 0 8px;
+    min-width: 20px;
+    position: relative;
+    top: -3px;
+  }
+
+  .item-price { white-space: nowrap; }
+
+  .footer {
+    margin-top: 0.3in;
+    text-align: center;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <div class="logo-wrap">
+      <img src="Logo/INTERVALE-BADGE.jpg" alt="Intervale Ranch" class="logo">
+    </div>
+    <div class="title">Wagyu Price Sheet</div>
+    <div class="subtitle">Price Per Pound</div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Premium Cuts</div>
+    <div class="item"><span class="item-name">Tenderloin / Filet Mignon</span><span class="item-dots"></span><span class="item-price">$99.99</span></div>
+    <div class="item"><span class="item-name">Tomahawk Ribeye</span><span class="item-dots"></span><span class="item-price">$79.99</span></div>
+    <div class="item"><span class="item-name">Porterhouse</span><span class="item-dots"></span><span class="item-price">$79.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Steakhouse Cuts</div>
+    <div class="item"><span class="item-name">T-Bone</span><span class="item-dots"></span><span class="item-price">$59.99</span></div>
+    <div class="item"><span class="item-name">Denver</span><span class="item-dots"></span><span class="item-price">$59.99</span></div>
+    <div class="item"><span class="item-name">Flat Iron</span><span class="item-dots"></span><span class="item-price">$59.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Butcher&rsquo;s Cuts</div>
+    <div class="item"><span class="item-name">Chuck Eye</span><span class="item-dots"></span><span class="item-price">$39.99</span></div>
+    <div class="item"><span class="item-name">Picanha</span><span class="item-dots"></span><span class="item-price">$39.99</span></div>
+    <div class="item"><span class="item-name">NY Sirloin</span><span class="item-dots"></span><span class="item-price">$39.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Everyday Cuts</div>
+    <div class="item"><span class="item-name">Sirloin Tip</span><span class="item-dots"></span><span class="item-price">$34.99</span></div>
+    <div class="item"><span class="item-name">Skirt Steak</span><span class="item-dots"></span><span class="item-price">$34.99</span></div>
+    <div class="item"><span class="item-name">Flank Steak</span><span class="item-dots"></span><span class="item-price">$34.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Value Cuts</div>
+    <div class="item"><span class="item-name">Top Round</span><span class="item-dots"></span><span class="item-price">$29.99</span></div>
+    <div class="item"><span class="item-name">London Broil</span><span class="item-dots"></span><span class="item-price">$29.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Ground &amp; Specialty</div>
+    <div class="item"><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$19.99</span></div>
+    <div class="item"><span class="item-name">Ground</span><span class="item-dots"></span><span class="item-price">$19.99</span></div>
+    <div class="item"><span class="item-name">Shaved</span><span class="item-dots"></span><span class="item-price">$19.99</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">Bones &amp; Offal</div>
+    <div class="item"><span class="item-name">Organs</span><span class="item-dots"></span><span class="item-price">$9.99</span></div>
+    <div class="item"><span class="item-name">Soup Bones</span><span class="item-dots"></span><span class="item-price">$9.99</span></div>
+    <div class="item"><span class="item-name">Short Ribs</span><span class="item-dots"></span><span class="item-price">$9.99</span></div>
+    <div class="item"><span class="item-name">Marrow Bones</span><span class="item-dots"></span><span class="item-price">$9.99</span></div>
+  </div>
+
+  <div class="footer">All prices per pound &middot; Prices subject to change</div>
+
+</div>
+
+</body>
+</html>
